@@ -6,6 +6,7 @@ import { predictTransaction } from "./api";
 import LandingPage from "./pages/LandingPage";
 import LoginPage from "./pages/LoginPage";
 import DashboardPage from "./pages/DashboardPage";
+import HistoryPage from "./pages/HistoryPage";
 
 import AppLayout from "./components/layout/AppLayout";
 
@@ -61,7 +62,7 @@ export default function App() {
             />
           }
         />
-        <Route path="/history" element={<div>History Page</div>} />
+        <Route path="/history" element={<HistoryPage transactions={transactions} />} />
       </Route>
     </Routes>
   );
