@@ -1,9 +1,13 @@
-const App = () => {
-  return(
-    <div>
-      <h1 style={{color : 'black'}}>fraud detection webapp</h1>
-    </div>
-  )
-}
+import { Routes, Route} from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
 
-export default App;
+
+export default function App() {
+  
+
+  return (
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+    </Routes>
+  );
+}
